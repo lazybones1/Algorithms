@@ -23,8 +23,8 @@ public:
         return node;
     }
     TreeNode* bstFromPreorder(vector<int>& preorder) {
-        TreeNode* node=new TreeNode(preorder[0]);
-        for(int i=1; i<preorder.size(); i++){
+        TreeNode* node= NULL;
+        for(int i=0; i<preorder.size(); i++){
             node = insertnode(node, preorder[i]);
         }
         return node;
